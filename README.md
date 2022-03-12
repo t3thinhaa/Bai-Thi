@@ -1,2 +1,0 @@
-# B-i-thi
-Thi
