@@ -1,0 +1,114 @@
+/* Header */
+.header {
+  background-color: #000;
+}
+.header__logo {
+  width: 10%;
+}
+.header__logo-img {
+  width: 50%;
+}
+.header__home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.header__nav-item {
+  margin: 5px 25px;
+  transition: all 0.5s ease-in;
+  position: relative;
+}
+
+.header__nav-item:hover .header__nav-child-list {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.header__nav-item:hover .header__nav-link {
+  color: var(--primary-color);
+}
+.header__nav-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.header__nav-link:after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 18px;
+  width: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.header__nav-item:hover .header__nav-link:after {
+  width: 100%;
+}
+
+/* Nav child */
+.header__nav-child-list {
+  background-color: #fff;
+  list-style: none;
+  position: absolute;
+  left: 0px;
+  top: 34px;
+  text-align: left;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.15s ease-out;
+  box-shadow: 0 3px 13px 0 rgb(0 0 0 / 3%);
+}
+
+.header__nav-child-list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -18px;
+  height: 20px;
+  width: 100%;
+}
+.header__nav-child-item {
+  padding: 9px 37px;
+  width: 257px;
+  /* position: relative; */
+}
+.header__nav-child-item:hover .header__nav-child-link::after {
+  width: 100%;
+}
+.header__nav-child-item:hover .header__nav-child-link {
+  color: var(--primary-color);
+}
+.header__nav-child-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.header__nav-child-link::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Banner */
+.banner__img {
+  width: 100%;
+}
