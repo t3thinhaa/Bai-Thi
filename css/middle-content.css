@@ -85,6 +85,7 @@
 .char-image {
     margin: 20px;
     width: 40%;
+    object-fit: scale-down;
 }
 .subs {
     padding: 20px 0;
