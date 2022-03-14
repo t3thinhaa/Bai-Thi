@@ -6,6 +6,8 @@
 }
 body {
     margin: 0;
+    background-image: url(/img/background.png);
+    
 }
 .wide {
     max-width: 1400px;
