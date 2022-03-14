@@ -129,3 +129,312 @@
   width: 100%;
   object-fit: cover;
 }
+/* hết css header và banner */
+/* -------------------------------------------------------- */
+/* css phần giữa */
+.mid-content {
+  background-image: url(/img/background.png);
+}
+.front {
+  margin: 0 20%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.562);
+  line-height: normal;
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Tiêu đề  */
+.title-line {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+
+/* nội dung 1 */
+.A2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+.A2 .col-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+}
+
+/* nội dung 2 */
+.A3 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.A3 p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+/* Nội dung 3 */
+.A4 {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.A4 .b1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;  
+}
+.bold-line{
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 28px;
+  padding: 20px 0 0 0;
+}
+.A4 p {
+  padding-bottom: 30px;
+}
+.A4 #atm-oxi {
+  padding-bottom: 30px;
+}
+
+/* nội dung 4 */
+.A5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+.A5 img {
+  padding-bottom: 30px;
+}
+.A5 p {
+  padding-bottom: 30px;
+}
+/* nội dung 5 */
+.A6 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+.A6 p {
+  margin: 20px;
+}
+.flex-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* ảnh nhân vật và câu chuyện đằng sau */
+.char-image {
+  margin: 20px;
+  width: 40%;
+  object-fit: scale-down;
+}
+.subs {
+  padding: 20px 0;
+}
+.bold-line {
+  font-weight: 900;
+}
+
+/* figure và caption  */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+figure .ima {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+figure .ima .img-2{
+  width: 49%;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+figure .ima .img-4 {
+  width: 49%;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+}
+figcaption {
+  text-align: center;
+  color: grey;
+  font-size: medium;
+}
+/* hết css phần giữa */
+/* ------------------------------------------------------------- */
+/* Css cho phần footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 55px 100px 0 55px;
+  background-image: linear-gradient(45deg, #0f0064 , #060055);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: rgb(213, 223, 236);
+  line-height: normal;
+  font-size: 20px;
+  border-bottom:2px solid #222;
+box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
+
+}
+.foot-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  
+}
+
+/* css các nội dung footer */
+.foot-content {
+  width: calc(32% - 10px);
+  margin: 10px ;
+}
+/* phần thông tin về chúng tôi */
+.about h2 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.about p {
+  color: rgb(213, 223, 236);
+}
+/* icon  */
+.icon {
+  margin-top: 20px;
+  display: flex;
+}
+.icon li {
+  list-style: none;
+}
+.icon li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* hiệu ứng hover cho icon ở footer và chỉnh màu */
+.icon li a:hover{
+  background: rgb(53, 209, 230);
+}
+.icon li a ion-icon {
+  color: rgb(213, 223, 236);
+  font-size: 20px;
+}
+/* phần các đường link */
+.links h2 {
+  color: rgb(213, 223, 236);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.links ul li{
+  list-style: none;
+}
+.links ul li a{
+  color: rgb(213, 223, 236);
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.links ul li a:hover{
+  color: rgb(72, 194, 41);
+}
+/* Phần liên hệ */
+.contact h2{
+  position: relative;
+  color: rgb(213, 223, 236);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.contact .info{
+  position: relative;
+}
+.contact .info li{
+  display: flex;
+  margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+  color: rgb(213, 223, 236);
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contact .info li span{
+  color: rgb(213, 223, 236);
+}
+.contact .info li a{
+  color: rgb(213, 223, 236);
+  text-decoration: none;
+}
+/* hết css phần footer */
+/* ------------------------------------------------------- */
+/* message plugin, phone call và nút về đầu trang */
+
+/* nút về đầu trang */
+#myBtn {
+  display: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  /* border: 2px solid #ccc; */
+  color: rgb(88, 98, 245);
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.7;
+  object-fit: fill;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;    
+}
+   
+#myBtn:hover {
+  background-color: #2861b691;
+  color: forestgreen;
+  
+}
+
+
+
+
+
+/* responsive cho footer */
+@media  (max-width: 900px){
+  footer{
+      padding: 40px;
+           }
+  footer .container{
+      flex-direction: column;
+  }
+  footer .container .foot-content{
+      margin-right: 0;
+      margin-bottom: 40px;
+  }
+  footer .container, .foot-content.about, .links, .contact{
+      width: 100%;
+  }
+}

@@ -256,6 +256,27 @@
                 </div>
             </div>
         </footer>
+        <!-- Button lên đầu trang và script cho nó -->
+        <button id="myBtn" title="Lên đầu trang">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </button>
+            <!-- script in body -->
+        <script>window.onscroll = function() {
+                scrollFunction()
+            };
+                function scrollFunction() {
+                    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+            
+                document.getElementById('myBtn').addEventListener("click", function(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        </script>
     </div>
 </body>
 
