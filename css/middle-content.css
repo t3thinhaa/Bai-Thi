@@ -1,0 +1,124 @@
+/* css phần giữa */
+.mid-content {
+    margin: 0 20%;
+    padding: 20px;
+    background-color: white!important;
+    line-height: normal;
+    font-size: 20px;
+    justify-content: center;
+}
+.front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Tiêu đề  */
+.A1 p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+/* nội dung 1 */
+.A2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.A2 .col-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+/* nội dung 2 */
+.A3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.A3 p {
+    font-size: 20px;
+}
+
+/* Nội dung 3 */
+.A4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.A4 .b1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;  
+}
+.bold-line{
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+/* nội dung 4 */
+.A5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* nội dung 5 */
+.A6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.A6 p {
+    margin: 20px;
+}
+.flex-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+/* ảnh nhân vật và câu chuyện đằng sau */
+.char-image {
+    margin: 20px;
+    width: 40%;
+}
+.subs {
+    padding: 20px 0;
+}
+.bold-line {
+    font-weight: 900;
+}
+
+
+/* figure và caption  */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+figure .ima {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+figure .ima .img-2{
+    width: 49%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+figure .ima .img-4 {
+    width: 49%;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+figcaption {
+    text-align: center;
+}
+/* hết css phần giữa */

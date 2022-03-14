@@ -1,0 +1,6 @@
+footer {
+    display: block;
+    width: 100%;
+    background-image: url(/img/thanh\ footer.png);
+    object-fit: fill;
+}
