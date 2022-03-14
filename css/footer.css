@@ -22,7 +22,7 @@ footer {
 
 /* css các nội dung footer */
 .foot-content {
-    width: calc(33% - 10px);
+    width: calc(32% - 10px);
     margin: 10px ;
 }
 /* phần thông tin về chúng tôi */
@@ -115,7 +115,7 @@ footer {
 }
 
 /* responsive cho footer */
-@media  (max-width: 768px){
+@media  (max-width: 900px){
     footer{
         padding: 40px;
              }
