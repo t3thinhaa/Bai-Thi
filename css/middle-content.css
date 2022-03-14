@@ -1,23 +1,24 @@
 /* css phần giữa */
 .mid-content {
-    margin: 0 20%;
-    padding: 20px;
-    background-color: white!important;
-    line-height: normal;
-    font-size: 20px;
-    justify-content: center;
+    background-image: url(/img/background.png);
 }
 .front {
+    margin: 0 20%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.562);
+    line-height: normal;
+    font-size: 25px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* Tiêu đề  */
-.A1 p {
+.title-line {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /* nội dung 1 */
@@ -25,25 +26,29 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 20px 0;
 }
 .A2 .col-2 {
     display: flex;
     flex-direction: row;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /* nội dung 2 */
 .A3 {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 .A3 p {
-    font-size: 20px;
+    font-size: 25px;
+    margin: 20px 0;
 }
 
 /* Nội dung 3 */
 .A4 {
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -56,6 +61,14 @@
 .bold-line{
     font-family: monospace;
     font-weight: bolder;
+    font-size: 28px;
+    padding: 20px 0 0 0;
+}
+.A4 p {
+    padding-bottom: 30px;
+}
+.A4 #atm-oxi {
+    padding-bottom: 30px;
 }
 
 /* nội dung 4 */
@@ -63,13 +76,20 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 20px 0;
 }
-
+.A5 img {
+    padding-bottom: 30px;
+}
+.A5 p {
+    padding-bottom: 30px;
+}
 /* nội dung 5 */
 .A6 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 20px 0;
 }
 .A6 p {
     margin: 20px;
@@ -121,5 +141,7 @@ figure .ima .img-4 {
 }
 figcaption {
     text-align: center;
+    color: grey;
+    font-size: medium;
 }
 /* hết css phần giữa */

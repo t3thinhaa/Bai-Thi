@@ -3,14 +3,17 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 55px 100px;
-    background-color: #5d74e6;
+    padding: 55px 100px 0 55px;
+    background-image: linear-gradient(45deg, #0f0064 , #060055);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    color: aliceblue;
+    color: rgb(213, 223, 236);
     line-height: normal;
     font-size: 20px;
+    border-bottom:2px solid #222;
+  box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
+
 }
 .foot-container {
     display: flex;
@@ -28,13 +31,12 @@ footer {
 /* phần thông tin về chúng tôi */
 
 .about h2 {
-    color: white;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
 .about p {
-    color: rgb(236, 228, 228);
+    color: rgb(213, 223, 236);
 }
 /* icon  */
 .icon {
@@ -61,14 +63,14 @@ footer {
     background: rgb(53, 209, 230);
 }
 .icon li a ion-icon {
-    color: #fff;
+    color: rgb(213, 223, 236);
     font-size: 20px;
 }
 
 /* phần các đường link */
 
 .links h2 {
-    color: white;
+    color: rgb(213, 223, 236);
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -76,7 +78,7 @@ footer {
     list-style: none;
 }
 .links ul li a{
-    color: rgb(236, 228, 228);
+    color: rgb(213, 223, 236);
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
@@ -90,7 +92,7 @@ footer {
 
 .contact h2{
     position: relative;
-    color: #fff;
+    color: rgb(213, 223, 236);
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -102,15 +104,15 @@ footer {
     margin-bottom: 16px;
 }
 .contact .info li span:nth-child(1) {
-    color: #fff;
+    color: rgb(213, 223, 236);
     font-size: 20px;
     margin-right: 10px;
 }
 .contact .info li span{
-    color: #fff;
+    color: rgb(213, 223, 236);
 }
 .contact .info li a{
-    color: #fff;
+    color: rgb(213, 223, 236);
     text-decoration: none;
 }
 
