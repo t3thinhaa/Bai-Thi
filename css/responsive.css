@@ -1,0 +1,114 @@
+/* responsive cho header và banner */
+/* màn dưới 1080px */
+@media (max-width: 1080px) {
+    
+    .banner {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        height: 50px fit-content;
+        font-size: 20px;
+    }
+    .banner {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        position: relative;
+    }
+}
+/* -------------------- */
+
+/* responsive phần middle content cho màn dưới 1080px */
+@media (max-width: 1080px) {
+    .front {
+        width: 85%;
+        margin: 0 auto;
+        padding: 15px;
+        font-size: 17px;
+    }
+    .front .bold-line {
+        font-size: 18px ;
+    }
+    .title-line {
+        padding: 15px 0;
+        line-height: 130%;
+    }
+    .A2 .col-2 {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .char-image {
+        width: 80%;
+        margin: auto;
+    }
+    .A4 .b1 {
+        flex-direction: column-reverse;
+    }
+}
+/* dưới 768px */
+@media (max-width: 768px) {
+    .front {
+        width: 95%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .front .bold-line {
+        font-size: 17px;
+    }
+    .title-line {
+        padding: 10px 0;
+        line-height: normal;
+    }
+    
+}
+/* hết phần middle content */
+
+/* ------------------------- */
+
+/* responsive cho footer */
+/* màn dưới 1080px */
+@media  (max-width: 1080px){
+    footer{
+        padding: 40px;
+        font-size: 16px;
+             }
+    footer .foot-container{
+        flex-wrap: wrap;
+        /* text-align: center; */
+    }
+    footer .foot-container .foot-content{
+        margin-right: 0;
+        margin-bottom: 40px;
+        
+    }
+    footer  .foot-content.about, .links, .contact{
+        width: 47%;
+    }
+  }
+/* dưới 768px */
+@media (max-width: 768px) {
+    footer{
+        padding: 20px;
+        font-size: 14px;
+    }
+    footer .foot-container{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .foot-container .foot-content{
+        margin-right: 0;
+        margin-bottom: 20px;
+        ;
+    }
+    footer  .foot-content.about, .links, .contact{
+        width: 100%;
+    }
+}

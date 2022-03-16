@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/middle-content.css"><!-- Css cho phần middle -->
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/responsive.css">
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -73,7 +74,7 @@
                     <p class="title-line">
                         Sự chung tay của cả một quốc gia đoàn kết đã giúp Việt Nam trở thành hình mẫu điển hình trên thế giới trong việc khống chế thành công Covid-19. <br>
                         Trong những ngày cả nước chung tay chống Covid-19, ngoài những diễn tiến căng thẳng của dịch bệnh còn có rất nhiều câu chuyện xúc động, truyền cảm hứng và lan tỏa lối sống tốt đẹp cho cộng đồng. <br>
-                        Sự tử tế sẻ chia và tinh thần lạc quan trong lúc hoạn noạn đã tiếp thêm niềm tin để mọi người đoàn kết cùng nhau vượt qua giai đoạn khó khăn.
+                        Sự tử tế sẻ chia và tinh thần lạc quan trong lúc hoạn noạn đã tiếp thêm niềm tin để mọi người đoàn kết cùng nhau vượt qua giai đoạn khó khăn
                     </p>
                 </div>
                 <!-- Câu chuyện thứ nhât: hệ sinh thái y khoa online -->
@@ -89,7 +90,7 @@
                 </div>
                     <!-- ````````` -->
                 <div class="A3">
-                    <img src="/img/appbeta.jpeg" alt="">
+                    <img src="/img/appbeta.jpeg" alt="" class="A3-img">
                     <p>
                         Năm 2019, BS Bão cùng các đồng nghiệp bắt đầu dự án "Hệ sinh thái y khoa online" gồm 5 thành phần: Ứng dụng (App), website, kênh Youtube, Fac ebook, chuỗi hội thảo trực tuyến (webinar) cùng với cộng đồng thực tế. Đây là sự phối hợp giữa 4 lĩnh vực: Y tế, giáo dục, công nghệ thông tin, tình nguyện vì cộng đồng. <br> <br>
                         Đến nay, hệ sinh thái đã đạt được những con số ấn tượng, cụ thể trang ykhoa.org thu hút hơn 7 triệu lượt truy cập với 2,5 triệu lượt sử dụng và hàng ngàn tài khoản dùng thường xuyên. <br> <br>
@@ -102,9 +103,9 @@
                     
                     <div class="b1">
                         <div class="subs">
-                            <p class="bold-line">
+                            <span class="bold-line">
                                 HOÀNG TUẤN ANH – “CHA ĐẺ” CỦA ATM GẠO, KHẨU TRANG MIỄN PHÍ, CHUÔNG CỬA CAMERA HỖ TRỢ CHĂM SÓC NGƯỜI BỆNH MẮC COVID-19 KHÔNG CÒN LÀ CÁI TÊN XA LẠ VỚI NHIỀU NGƯỜI.
-                            </p>
+                            </span>
                             <br>
                             <br>
                             <p>
@@ -167,9 +168,9 @@
                 <!-- không ai bị bỏ lại -->
                 <div class="A6" id="ko-ai-bi-bo-lai">
                     <img src="/img/title 4.png" alt=""> <br>
-                    <p class="bold-line">
+                    <span class="bold-line">
                         Khi được lệnh giãn cách xa hôi được bãi bỏ, dòng người ồ ạt đổ về quê sau nhiều tháng không có công ăn việc làm. Thế nhưng, việc di chuyển giữa các tỉnh bằng phương tiện cá nhân vẫn chưa được cho phép, nhiều người dù biết vẫn bất chấp tìm cách rời khỏi ổ dịch.
-                    </p>
+                    </span>
                     <p>
                         Tài sản ngoài chiếc xe máy, còn có nồi cơm điện, vài ba đôi móc quần áo với mấy chục nghìn đồng còn sót lại sau thời gian dài sống trong cảnh thiếu thốn. Mặc dù đã nhận được những túi an sinh từ thành phố, sự hỗ trợ của các mạnh thường quân hay được miễn giảm tiền trọ, nhưng vì áp lực sinh hoạt phí quá lớn, họ không thể tiếp tục ở lại. Không có phương tiện giao thông như xe khách, máy bay..phương tiện duy nhất mà mọi người có thể về quê là xe máy.
                     </p>
@@ -256,11 +257,46 @@
                 </div>
             </div>
         </footer>
+<!-- ------------------------------------------------------------------------------------- -->
+        <!-- message plugin, phone call, back to top button -->
+            <!-- Messenger Plugin chat Code -->
+            <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101098755882654");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
         <!-- Button lên đầu trang và script cho nó -->
         <button id="myBtn" title="Lên đầu trang">
             <ion-icon name="arrow-up-outline"></ion-icon>
         </button>
-            <!-- script in body -->
+        <!-- script in body -->
         <script>window.onscroll = function() {
                 scrollFunction()
             };
@@ -271,7 +307,6 @@
                         document.getElementById("myBtn").style.display = "none";
                     }
                 }
-            
                 document.getElementById('myBtn').addEventListener("click", function(){
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
