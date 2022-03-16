@@ -260,58 +260,74 @@
 <!-- ------------------------------------------------------------------------------------- -->
         <!-- message plugin, phone call, back to top button -->
             <!-- Messenger Plugin chat Code -->
-            <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
+            <div id="fb-root"></div>
+            <!-- Your Plugin chat code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+            <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "101098755882654");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+            <!-- Your SDK code -->
+            <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v13.0'
+                });
+            };
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
+        <!-- hết plugin messenger -->
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+        <!-- phone call button -->
+            <button  id="phBtn" title="Gọi Điện Thoại">
+                <ion-icon name="call-outline"></ion-icon>
+            </button>
+            <!-- script  -->
+            <script>
+                window.onclick = function() {
+                    onclickFunction()
+                };  
+                document.getElementById("phBtn").addEventListener("click", function(){
+                    document.documentElement.te
+                })        
+            </script>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101098755882654");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+        <!-- what app plugin -->
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div>
 
 
         <!-- Button lên đầu trang và script cho nó -->
-        <button id="myBtn" title="Lên đầu trang">
-            <ion-icon name="arrow-up-outline"></ion-icon>
-        </button>
-        <!-- script in body -->
-        <script>window.onscroll = function() {
-                scrollFunction()
-            };
-                function scrollFunction() {
-                    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-                        document.getElementById("myBtn").style.display = "block";
-                    } else {
-                        document.getElementById("myBtn").style.display = "none";
+            <button id="baBtn" title="Lên đầu trang">
+                <ion-icon name="arrow-up-outline"></ion-icon>
+            </button>
+            <!-- script  -->
+            <script>window.onscroll = function() {
+                    scrollFunction()
+                };
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                            document.getElementById("baBtn").style.display = "block";
+                        } else {
+                            document.getElementById("baBtn").style.display = "none";
+                        }
                     }
-                }
-                document.getElementById('myBtn').addEventListener("click", function(){
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            });
-        </script>
+                    document.getElementById('baBtn').addEventListener("click", function(){
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                });
+            </script>
+        <!-- ------------------------------- -->
     </div>
 </body>
 

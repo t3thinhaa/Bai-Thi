@@ -410,13 +410,44 @@ footer {
 /* ------------------------------------------------------- */
 /* message plugin, phone call và nút về đầu trang */
 
-/* nút về đầu trang */
-#myBtn {
-  display: none;
+/* nút phone call */
+#phBtn {
+  display: block;
   width: 45px;
   height: 45px;
   position: fixed;
   bottom: 80px;
+  right: 20px;
+  z-index: 1;
+  background-color: rgb(23, 245, 226);
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.7;
+  object-fit: fill;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#phBtn ion-icon {
+  color:white;
+  cursor: pointer;
+  font-size: 40px;
+}
+#phBtn:hover {
+background-color: aliceblue;
+color: #060055;
+}
+
+/* nút về đầu trang */
+#baBtn {
+  display: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 125px;
   right: 20px;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0);
@@ -426,13 +457,18 @@ footer {
   border-radius: 50%;
   opacity: 0.7;
   object-fit: fill;
-  font-size: 40px;
+  /* font-size: 40px; */
   justify-content: center;
   align-items: center;
   margin: auto;    
 }
+#baBtn ion-icon{
+  color: rgb(88, 98, 245);
+  cursor: pointer;
+  font-size: 40px;
+}
    
-#myBtn:hover {
+#baBtn:hover {
   background-color: #2861b691;
   color: forestgreen;
   
