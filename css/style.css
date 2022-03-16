@@ -25,6 +25,19 @@
   list-style: none;
   display: flex;
   align-items: center;
+  /* overflow: hidden; */
+}
+.header__nav-list .icon {
+    text-align: center;
+    margin: 5px 25px;
+    position: relative;
+    display: none;
+}
+.header__nav-list .icon a ion-icon {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(213, 223, 236);
+  font-weight: bolder;
 }
 .header__nav-item {
   margin: 5px 25px;
@@ -293,23 +306,24 @@ figcaption {
 
 /* Css cho phần footer */
 footer {
-  /* position: relative; */
+  position: relative;
   /* z-index: -1; */
   width: 100%;
   height: auto;
-  padding: 55px 100px 0 55px;
+  padding: 5px 10px 0 5px;
   background-image: linear-gradient(45deg, #0f0064 , #060055);
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
   color: rgb(213, 223, 236);
   line-height: normal;
-  font-size: 18px;
+  font-size: 10px;
   border-bottom:2px solid #222;
   box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
 
 }
 .foot-container {
+  padding-left: 20px;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
@@ -406,6 +420,23 @@ footer {
   color: rgb(213, 223, 236);
   text-decoration: none;
 }
+/* css cho ion-icon */
+#iconlocation {
+  color: rgb(255, 45, 8);
+  
+}
+#iconphone {
+  color: aqua;
+  
+
+
+}
+#iconmail {
+  color: yellow;
+
+
+
+}
 /* hết css phần footer */
 /* ------------------------------------------------------- */
 /* message plugin, phone call và nút về đầu trang */
@@ -451,13 +482,11 @@ color: #060055;
   right: 20px;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0);
-  /* border: 2px solid #ccc; */
   color: rgb(88, 98, 245);
   cursor: pointer;
   border-radius: 50%;
   opacity: 0.7;
   object-fit: fill;
-  /* font-size: 40px; */
   justify-content: center;
   align-items: center;
   margin: auto;    
@@ -471,7 +500,6 @@ color: #060055;
 #baBtn:hover {
   background-color: #2861b691;
   color: forestgreen;
-  
 }
 
 

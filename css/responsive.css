@@ -1,32 +1,98 @@
 /* responsive cho header và banner */
 /* màn dưới 1080px */
 @media (max-width: 1080px) {
-    
+    .header__logo {
+        width: 20%;
+    }
     .banner {
         width: 80%;
     }
 }
 @media (max-width: 768px) {
-    .header {
-        height: 50px fit-content;
-        font-size: 20px;
+    .header__logo {
+        width: 20%;
+    }
+    .header__nav-link {
+        font-size: 1.9rem;
     }
     .banner {
         width: 90%;
     }
 }
 @media (max-width: 480px) {
+    .header__logo {
+        width: 30%;
+        padding-left: 30px;
+    }
     .header {
-        position: relative;
+        width: 100%;
+    }
+    .header__nav-link {
+        font-size: 1.7rem;
     }
 }
 /* -------------------- */
+/* responsive cho nav */
+@media (max-width: 600px) {
+    .header__home {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header__nav-list li:not(:first-child){
+        display: none;
+    }
+    .header__nav-list  {
+        display: block;
+        float: right;
+    }
+    .header__nav-list li.icon {
+        display: block;
+        float: right;
+        text-align: right;
+    }
+}
+@media (max-width: 600px) {
+    .header__nav-list.responsive {
+        position: relative;
+    }
+    .header__nav-list.responsive .icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .header__nav-list.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header__nav-list.responsive .header__nav-item .header__nav-child-list {
+        opacity: 1;
+        visibility: visible;
+        /* transition: none; */
+        margin-left: -50px;
+        position: relative;
+        background-color:unset;
+        left: unset;
+        top: unset;
+        text-align: unset;
+        padding: unset;
+        opacity: unset;
+        box-shadow: unset;
+        border-radius: unset;
+    }
+    .header__nav-list.responsive .header__nav-child-link {
+        color: aliceblue;
+        font-size: 1.5rem;
+        padding-left: 30px;
+}
+
+
 
 /* responsive phần middle content cho màn dưới 1080px */
 @media (max-width: 1080px) {
     .front {
         width: 85%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 15px;
         font-size: 17px;
     }
@@ -39,9 +105,8 @@
     }
     .A2 .col-2 {
         flex-direction: column;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
+        /* margin: auto;     */
+       
     }
     .char-image {
         width: 80%;
@@ -74,18 +139,9 @@
 /* responsive cho footer */
 /* màn dưới 1080px */
 @media  (max-width: 1080px){
-    footer{
-        padding: 40px;
-        font-size: 16px;
-             }
-    footer .foot-container{
-        flex-wrap: wrap;
-        /* text-align: center; */
-    }
     footer .foot-container .foot-content{
         margin-right: 0;
-        margin-bottom: 40px;
-        
+        margin-bottom: 40px;  
     }
     footer  .foot-content.about, .links, .contact{
         width: 47%;
@@ -93,13 +149,8 @@
   }
 /* dưới 768px */
 @media (max-width: 768px) {
-    footer{
-        padding: 20px;
-        font-size: 14px;
-    }
     footer .foot-container{
-        flex-direction: column;
-        margin: auto;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
@@ -109,6 +160,16 @@
         ;
     }
     footer  .foot-content.about, .links, .contact{
+        width: 47%;
+    }
+}
+/* dưới 480px */
+@media (max-width: 480px) {
+    footer.foot-container {
+        flex-direction: column;
+    }
+    footer  .foot-content.about, .links, .contact{
         width: 100%;
     }
+}
 }

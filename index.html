@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/middle-content.css"><!-- Css cho phần middle -->
-    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/responsive.css">
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
     <div class="main">
-
         <header class="header">
             <div class="grid wide">
                 <!-- Header nav -->
@@ -28,12 +27,17 @@
                     <div class="header__logo">
                         <img src="./img/LOGO-WEB-623x400.png" alt="" class="header__logo-img">
                     </div>
-                    <ul class="header__nav-list">
+                    <ul class="header__nav-list" id="nav-list">
+                        <li class="icon">
+                            <a href="javascript:void(0);" class="header__nav-link" onclick="myFunction()">
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </a>
+                        </li>
                         <li class="header__nav-item">
                             <a href="" class="header__nav-link">Trang Chủ</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#cau-chuyen" class="header__nav-link">Câu chuyện</a>
+                            <a href="#" class="header__nav-link">Câu chuyện</a>
                             <!-- Nav child -->
                             <ul class="header__nav-child-list">
                                 <li class="header__nav-child-item">
@@ -56,9 +60,20 @@
                         <li class="header__nav-item">
                             <a href="" class="header__nav-link">Về chúng tôi</a>
                         </li>
+                        
                     </ul>
+                <!-- script cho icon -->
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("nav-list");
+                        if (x.className === "header__nav-list") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "header__nav-list"
+                        }
+                    }
+                </script>
                 </div>
-
             </div>
         </header>
         <!-- Banner -->
@@ -210,7 +225,7 @@
                 <div class="foot-content about">
                     <h2>Thông tin về chúng tôi</h2>
                     <p>
-                        Phần này tui chưa biết viết gì hết.
+                        Nhóm 3 Người được 
                     </p>
                     <ul class="icon">
                         <li><a href="https://facebook.com" target="_blank"><ion-icon name="logo-facebook" ></ion-icon></a></li>
@@ -231,21 +246,21 @@
                     <h2>Thông Tin Liên Hệ</h2>
                     <ul class="info">
                         <li>
-                            <span><ion-icon name="location-outline"></ion-icon></span>
-                            <span>Quảng Nam - Đà Nẵng <br>
-                                *thêm địa chỉ của trường hai bên*
+                            <span><ion-icon name="location-outline" id="iconlocation"></ion-icon></span>
+                            <span>Softech Apptech - Softech Arena <br>
+                                38 Yên Bái, Quận Hải Châu, Thành phố Đà Nẵng <br>
                             </span>
                         </li>
                         <li>
-                            <span><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                            <span><ion-icon name="phone-portrait-outline" id="iconphone"></ion-icon></span>
                             <p>
                                 <a href="#">0763788748 - Huỳnh Trường Duy</a> <br>
                                 <a href="#">0935716395 - Trương Quang Dũng</a> <br>
-                                <a href="#">0796699805 - Trường Thịnh</a>
+                                <a href="#">0796699805 - Thân Trường Thịnh</a>
                             </p>
                         </li>
                         <li>
-                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <span><ion-icon name="mail-outline" id="iconmail"></ion-icon></span>
                             <p>
                                 <a href="#">duy12c2@gmail.com</a> <br>
                                 <a href="#">Dungxtruongw1995@gmail.com</a> <br>
@@ -288,7 +303,7 @@
         <!-- hết plugin messenger -->
 
         <!-- phone call button -->
-            <button  id="phBtn" title="Gọi Điện Thoại">
+            <button  id="phBtn" title="Gọi Điện Thoại" href="tel:0796699805">
                 <ion-icon name="call-outline"></ion-icon>
             </button>
             <!-- script  -->
@@ -302,9 +317,9 @@
             </script>
 
 
-        <!-- what app plugin -->
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div>
+        <!-- what app plugin  (đang lỗi)-->
+            <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div> -->
 
 
         <!-- Button lên đầu trang và script cho nó -->
