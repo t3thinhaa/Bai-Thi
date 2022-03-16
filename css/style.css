@@ -6,6 +6,7 @@
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4) ;
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 .header__logo {
   width: 10%;
@@ -60,6 +61,7 @@
 
 .header__nav-item:hover .header__nav-link:after {
   width: 100%;
+
 }
 
 /* Nav child */
@@ -122,7 +124,7 @@
   display: block;
   position: relative;
   z-index: -1;
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 .banner__img {
@@ -130,17 +132,20 @@
   object-fit: cover;
 }
 /* hết css header và banner */
+
 /* -------------------------------------------------------- */
+
 /* css phần giữa */
 .mid-content {
   background-image: url(/img/background.png);
 }
 .front {
-  margin: 0 20%;
-  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
   background-color: rgba(255, 255, 255, 0.562);
   line-height: normal;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -149,9 +154,10 @@
 /* Tiêu đề  */
 .title-line {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  /* font-size: 25px; */
   font-weight: bolder;
   padding: 20px 0;
+  line-height: 180%;
 }
 
 /* nội dung 1 */
@@ -174,8 +180,13 @@
   flex-direction: column;
   width: 100%;
 }
+.A3 .A3-img {
+  width: 100%;
+  object-fit: contain;
+  transform: scale();
+}
 .A3 p {
-  font-size: 25px;
+  /* font-size: 25px; */
   margin: 20px 0;
 }
 
@@ -235,11 +246,13 @@
 /* ảnh nhân vật và câu chuyện đằng sau */
 .char-image {
   margin: 20px;
-  width: 40%;
+  width: 37%;
   object-fit: scale-down;
 }
 .subs {
   padding: 20px 0;
+  object-fit: scale-down;
+  /* font-size: 1.5vw; */
 }
 .bold-line {
   font-weight: 900;
@@ -272,39 +285,46 @@ figure .ima .img-4 {
 figcaption {
   text-align: center;
   color: grey;
-  font-size: medium;
+  font-size: 14px;
 }
 /* hết css phần giữa */
+
 /* ------------------------------------------------------------- */
+
 /* Css cho phần footer */
 footer {
-  position: relative;
+  /* position: relative; */
+  /* z-index: -1; */
   width: 100%;
   height: auto;
   padding: 55px 100px 0 55px;
   background-image: linear-gradient(45deg, #0f0064 , #060055);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
   color: rgb(213, 223, 236);
   line-height: normal;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom:2px solid #222;
-box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
+  box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
 
 }
 .foot-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   width: 100%;
-  
+  justify-content: space-evenly;
+  word-break:break-all;
 }
 
 /* css các nội dung footer */
 .foot-content {
   width: calc(32% - 10px);
-  margin: 10px ;
+  margin: 10px;
+  /* padding: 20px; */
+  justify-content: center;
+  align-items:center;
 }
 /* phần thông tin về chúng tôi */
 .about h2 {
@@ -396,8 +416,8 @@ box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
   width: 45px;
   height: 45px;
   position: fixed;
-  bottom: 60px;
-  right: 10px;
+  bottom: 80px;
+  right: 20px;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0);
   /* border: 2px solid #ccc; */
@@ -419,22 +439,3 @@ box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
 }
 
 
-
-
-
-/* responsive cho footer */
-@media  (max-width: 900px){
-  footer{
-      padding: 40px;
-           }
-  footer .container{
-      flex-direction: column;
-  }
-  footer .container .foot-content{
-      margin-right: 0;
-      margin-bottom: 40px;
-  }
-  footer .container, .foot-content.about, .links, .contact{
-      width: 100%;
-  }
-}
