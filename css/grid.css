@@ -2,12 +2,9 @@
     width: 100%;
     display: block;
     padding: 0;
-    
 }
 body {
     margin: 0;
-    background-image: url(/img/background.png);
-    
 }
 .wide {
     max-width: 1400px;
