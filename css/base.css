@@ -9,6 +9,7 @@ html {
   line-height: 1.6rem;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 :root {
   --primary-color: #3fd0d4;

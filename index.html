@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Covid-Stories</title>
 
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -24,9 +24,9 @@
             <div class="grid wide">
                 <!-- Header nav -->
                 <div class="header__home">
-                    <div class="header__logo">
+                    <a href="#" class="header__logo">
                         <img src="./img/LOGO-WEB-623x400.png" alt="" class="header__logo-img">
-                    </div>
+                    </a>
                     <ul class="header__nav-list" id="nav-list">
                         <li class="icon">
                             <a href="javascript:void(0);" class="header__nav-link" onclick="myFunction()">
@@ -58,21 +58,23 @@
                             </ul>
                         </li>
                         <li class="header__nav-item">
-                            <a href="" class="header__nav-link">Về chúng tôi</a>
+                            <a href="/aboutUs.html" class="header__nav-link">Về chúng tôi</a>
                         </li>
                         
                     </ul>
-                <!-- script cho icon -->
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("nav-list");
-                        if (x.className === "header__nav-list") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "header__nav-list"
+                    <!-- script cho icon -->
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("nav-list");
+                            if (x.className === "header__nav-list") {
+                                x.className += " responsive";
+                            } else {
+                                (x.className = "header__nav-list")
+                            }
+        
+
                         }
-                    }
-                </script>
+                    </script>
                 </div>
             </div>
         </header>
@@ -132,7 +134,7 @@
     
                     </div>
     
-                    <p>
+                    <p> 
                         “ATM gạo” đã được người dân đồng lòng hưởng ứng còn các mạnh thường quân khắp nơi đã tích cực chở gạo tới tới hỗ trợ người nghèo. 
                         <br>
                         Với sự quyết tâm, không buông xuôi của anh Hoàng Tuấn Anh, dự án “ATM gạo” của anh ngày nay đã và đang lan tỏa ra ngoài lãnh thổ Việt Nam. Quan trọng nhất vẫn là khi người nghèo gặp khó khăn, gạo vẫn chảy về “ATM gạo” và chảy về nồi cơm của các gia đình nghèo mỗi ngày theo đúng ý nghĩa ban đầu của anh Hoàng Tuấn Anh.
@@ -184,7 +186,7 @@
                 <div class="A6" id="ko-ai-bi-bo-lai">
                     <img src="/img/title 4.png" alt=""> <br>
                     <span class="bold-line">
-                        Khi được lệnh giãn cách xa hôi được bãi bỏ, dòng người ồ ạt đổ về quê sau nhiều tháng không có công ăn việc làm. Thế nhưng, việc di chuyển giữa các tỉnh bằng phương tiện cá nhân vẫn chưa được cho phép, nhiều người dù biết vẫn bất chấp tìm cách rời khỏi ổ dịch.
+                        Khi được lệnh giãn cách xa hội được bãi bỏ, dòng người ồ ạt đổ về quê sau nhiều tháng không có công ăn việc làm. Thế nhưng, việc di chuyển giữa các tỉnh bằng phương tiện cá nhân vẫn chưa được cho phép, nhiều người dù biết vẫn bất chấp tìm cách rời khỏi ổ dịch.
                     </span>
                     <p>
                         Tài sản ngoài chiếc xe máy, còn có nồi cơm điện, vài ba đôi móc quần áo với mấy chục nghìn đồng còn sót lại sau thời gian dài sống trong cảnh thiếu thốn. Mặc dù đã nhận được những túi an sinh từ thành phố, sự hỗ trợ của các mạnh thường quân hay được miễn giảm tiền trọ, nhưng vì áp lực sinh hoạt phí quá lớn, họ không thể tiếp tục ở lại. Không có phương tiện giao thông như xe khách, máy bay..phương tiện duy nhất mà mọi người có thể về quê là xe máy.
@@ -205,8 +207,8 @@
                             đồng hành cùng người có hoàn cảnh khó khăn
                         </figcaption>
                     </figure>
-                    <p style="text-indent: 30px;">
-                        Con người Việt Nam mang trong mình dòng máu yêu thương đồng bào sâu sắc. Thời đạt ngày nay cơ sở vật chất đất nước ngày càng cải thiện tấm lòng đó không được nhiều người biết đến cho tới khi đất nước lâm nguy những vì sao cao quý ấy lại ngời sáng hơn bao giờ hết. Những tấm lòng lương thiện tạo nên những điều quý giá. Chúng ta phải biết ơn và noi theo họ để tạo nên một đất nước giàu đẹp.
+                    <p >
+                        Con người Việt Nam mang trong mình dòng máu yêu thương đồng bào sâu sắc. Thời đại ngày nay cơ sở vật chất đất nước ngày càng cải thiện, tấm lòng đó không được nhiều người biết đến cho tới khi đất nước lâm nguy, những vì sao cao quý ấy lại ngời sáng hơn bao giờ hết. Những tấm lòng lương thiện tạo nên những điều quý giá. Chúng ta phải biết ơn và noi theo họ để tạo nên một đất nước giàu đẹp.
                     </p>
                     <div class="flex-right">
                         <p>
@@ -225,7 +227,7 @@
                 <div class="foot-content about">
                     <h2>Thông tin về chúng tôi</h2>
                     <p>
-                        Nhóm 3 Người được thành lập ngày 12 tháng 3 năm 2022 <br>
+                        Nhóm DTD được thành lập ngày 12 tháng 3 năm 2022 <br>
                         Nhóm có 3 thành viên nam, đến từ hai khoá học của Softech <br>
                         Softech-Apptech và Softech-Arena
 
@@ -240,7 +242,7 @@
                     <h2>Đường Dẫn</h2>
                     <ul>
                         <li><a href="#">Trang Chủ</a></li>
-                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="/aboutUs.html">Về Chúng Tôi</a></li>
                         <li><a href="https://www.quyvacxincovid19.gov.vn/" target="_blank">Quỹ Phòng Chống covid-19</a></li>
                     </ul>
                 </div>
@@ -305,24 +307,9 @@
             </script>
         <!-- hết plugin messenger -->
 
-        <!-- phone call button -->
-            <button  id="phBtn" title="Gọi Điện Thoại" href="tel:0796699805">
-                <ion-icon name="call-outline"></ion-icon>
-            </button>
-            <!-- script  -->
-            <script>
-                window.onclick = function() {
-                    onclickFunction()
-                };  
-                document.getElementById("phBtn").addEventListener("click", function(){
-                    document.documentElement.te
-                })        
-            </script>
-
-
-        <!-- what app plugin  (đang lỗi)-->
-            <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div> -->
+        <!-- what app plugin  -->
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div>
 
 
         <!-- Button lên đầu trang và script cho nó -->

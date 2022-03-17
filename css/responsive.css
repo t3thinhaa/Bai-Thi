@@ -8,6 +8,12 @@
         width: 80%;
     }
 }
+@media (max-width: 900px) {
+    .banner {
+        position: relative;
+        top: 55px;
+    }
+}
 @media (max-width: 768px) {
     .header__logo {
         width: 20%;
@@ -17,6 +23,13 @@
     }
     .banner {
         width: 90%;
+        position: relative;
+        top: 55px;
+        
+    }
+    .header__nav-link::after,
+    .header__nav-child-link::after {
+        content: unset;
     }
 }
 @media (max-width: 480px) {
@@ -84,8 +97,8 @@
         color: aliceblue;
         font-size: 1.5rem;
         padding-left: 30px;
+    }
 }
-
 
 
 /* responsive phần middle content cho màn dưới 1080px */
