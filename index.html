@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/responsive.css">
-        
-    
+
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -60,28 +60,16 @@
                         <li class="header__nav-item">
                             <a href="/aboutUs.html" class="header__nav-link">Về chúng tôi</a>
                         </li>
-                        
-                    </ul>
-                    <!-- script cho icon -->
-                    <script>
-                        function myFunction() {
-                            var x = document.getElementById("nav-list");
-                            if (x.className === "header__nav-list") {
-                                x.className += " responsive";
-                            } else {
-                                (x.className = "header__nav-list")
-                            }
-        
 
-                        }
-                    </script>
+                    </ul>
                 </div>
             </div>
         </header>
         <!-- Banner -->
         <div class="banner">
-            <img src="./img/bannner 2.png" alt="" class="banner__img">
+            <img src="./img/banner2.png" alt="" class="banner__img" id="banner-img" onclick="changeImg()">
         </div>
+
 
         <!-- Middle content -->
         <section class="mid-content">
@@ -105,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                    <!-- ````````` -->
+                <!-- ````````` -->
                 <div class="A3">
                     <img src="/img/appbeta.jpeg" alt="" class="A3-img">
                     <p>
@@ -117,7 +105,7 @@
                 <!-- ATM gạo -->
                 <div class="A4" id="atm-gao">
                     <img src="/img/title 2.png" alt="">
-                    
+
                     <div class="b1">
                         <div class="subs">
                             <span class="bold-line">
@@ -129,21 +117,21 @@
                                 Từ chiếc máy đầu tiên lắp đặt vào ngày 6.4.2020, mô hình ATM Gạo rồi sau đó là ATM khẩu trang của anh Hoàng Tuấn Anh được nhân rộng trên toàn quốc với hơn 100 máy với cả chục nghìn tấn gạo. ATM Gạo sau 1 năm đưa vào hoạt động đã có mặt ở khắp các tỉnh thành trong cả nước, cùng người dân vượt qua 3 lần dịch COVID-19 bùng phát và đi vào sâu vùng rốn lũ miền Trung.
                             </p>
                         </div>
-                        
+
                         <img class="char-image" src="/img/hoang tuan anh.png" alt="hoang-tuan-anh">
-    
+
                     </div>
-    
-                    <p> 
-                        “ATM gạo” đã được người dân đồng lòng hưởng ứng còn các mạnh thường quân khắp nơi đã tích cực chở gạo tới tới hỗ trợ người nghèo. 
+
+                    <p>
+                        “ATM gạo” đã được người dân đồng lòng hưởng ứng còn các mạnh thường quân khắp nơi đã tích cực chở gạo tới tới hỗ trợ người nghèo.
                         <br>
                         Với sự quyết tâm, không buông xuôi của anh Hoàng Tuấn Anh, dự án “ATM gạo” của anh ngày nay đã và đang lan tỏa ra ngoài lãnh thổ Việt Nam. Quan trọng nhất vẫn là khi người nghèo gặp khó khăn, gạo vẫn chảy về “ATM gạo” và chảy về nồi cơm của các gia đình nghèo mỗi ngày theo đúng ý nghĩa ban đầu của anh Hoàng Tuấn Anh.
                     </p>
                     <!-- ATM oxi -->
                     <img src="/img/a6.jpg.png" alt="" id="atm-oxi">
                     <p>
-                        ATM-Oxy là chương trình tiếp theo  ATM-Gạo đã được triển khai rất thành công và thiết thực với người dân nghèo tại TP.HCM và các tỉnh thành phía Nam. Anh Hoàng Tuấn Anh cho biết, thực tế cho thấy, khi dịch bùng phát, nhiều nước xảy ra tình trạng khan hiếm oxy, TP Hồ Chí Minh khi đó cũng có hàng ngàn bệnh nhân F0 tự cách ly, điều trị tại nhà cần được cung cấp oxy khi trở nặng. <br>
-                        Khi lần đầu tiên “ATM gạo” đi vào hoạt động có hiệu quả, anh Hoàng Tuấn Anh cũng đã tâm sự về một “giấc mơ xa”. Đó là đem “ATM gạo” đi khắp thế giới, để Việt Nam được biết đến như nước đầu tiên phát minh ra chiếc máy này. Giấc mơ đó hiện nay cũng đã trở thành sự thật khi thông qua các cơ quan chức năng của Việt Nam, “ATM gạo” của anh Hoàng Tuấn Anh đã được trao tặng cho 10 nước Đông Nam Á và đang tiếp tục đến với nhiều nước khác trên thế giới để giúp đỡ những người dân có hoàn cảnh khó khăn khi thiếu lương thực.  
+                        ATM-Oxy là chương trình tiếp theo ATM-Gạo đã được triển khai rất thành công và thiết thực với người dân nghèo tại TP.HCM và các tỉnh thành phía Nam. Anh Hoàng Tuấn Anh cho biết, thực tế cho thấy, khi dịch bùng phát, nhiều nước xảy ra tình trạng khan hiếm oxy, TP Hồ Chí Minh khi đó cũng có hàng ngàn bệnh nhân F0 tự cách ly, điều trị tại nhà cần được cung cấp oxy khi trở nặng. <br>
+                        Khi lần đầu tiên “ATM gạo” đi vào hoạt động có hiệu quả, anh Hoàng Tuấn Anh cũng đã tâm sự về một “giấc mơ xa”. Đó là đem “ATM gạo” đi khắp thế giới, để Việt Nam được biết đến như nước đầu tiên phát minh ra chiếc máy này. Giấc mơ đó hiện nay cũng đã trở thành sự thật khi thông qua các cơ quan chức năng của Việt Nam, “ATM gạo” của anh Hoàng Tuấn Anh đã được trao tặng cho 10 nước Đông Nam Á và đang tiếp tục đến với nhiều nước khác trên thế giới để giúp đỡ những người dân có hoàn cảnh khó khăn khi thiếu lương thực.
                     </p>
                 </div>
                 <!-- Giao hàng 0 đồng -->
@@ -178,7 +166,7 @@
                             <img src="/img/Ps-gianhang0dong-8.jpg" class="img-4" alt="">
                         </div>
                         <figcaption>Gian hàng hỗ trợ nhu yếu phẩm "Ai thiếu đến nhận - Ai dư đến cho" <br>
-                                    phường Bình Đức
+                            phường Bình Đức
                         </figcaption>
                     </figure>
                 </div>
@@ -197,7 +185,7 @@
                         <br>
                         Không chỉ vậy, các hội nhóm tình nguyện khác ở khắp nơi cũng đã liên tục mang những phần cơm nóng, những bát cháo tình thương để giúp cho người dân xa quê cảm thấy được no bụng, ấm lòng. Và sau đó hình ảnh những chiến sĩ công an dẫn đoàn, theo sau là dòng người về quê với ánh mắt rạng rỡ, cái vẫy tay đầy hy vọng đã làm lay động trái tim của hàng triệu người.
                     </p>
-                    
+
                     <figure>
                         <div class="ima">
                             <img src="/img/img1.jpg" class="img-2" alt="">
@@ -207,7 +195,7 @@
                             đồng hành cùng người có hoàn cảnh khó khăn
                         </figcaption>
                     </figure>
-                    <p >
+                    <p>
                         Con người Việt Nam mang trong mình dòng máu yêu thương đồng bào sâu sắc. Thời đại ngày nay cơ sở vật chất đất nước ngày càng cải thiện, tấm lòng đó không được nhiều người biết đến cho tới khi đất nước lâm nguy, những vì sao cao quý ấy lại ngời sáng hơn bao giờ hết. Những tấm lòng lương thiện tạo nên những điều quý giá. Chúng ta phải biết ơn và noi theo họ để tạo nên một đất nước giàu đẹp.
                     </p>
                     <div class="flex-right">
@@ -233,8 +221,12 @@
 
                     </p>
                     <ul class="icon">
-                        <li><a href="https://facebook.com" target="_blank"><ion-icon name="logo-facebook" ></ion-icon></a></li>
-                        <li><a href="https://discord.com/channels/951817038463131648/951817038463131650" target="_blank"><ion-icon name="logo-discord"></ion-icon></a></li>
+                        <li><a href="https://facebook.com" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></li>
+                        <li><a href="https://discord.com/channels/951817038463131648/951817038463131650" target="_blank">
+                                <ion-icon name="logo-discord"></ion-icon>
+                            </a></li>
                     </ul>
                 </div>
                 <!-- các đường link của page -->
@@ -251,13 +243,17 @@
                     <h2>Thông Tin Liên Hệ</h2>
                     <ul class="info">
                         <li>
-                            <span><ion-icon name="location-outline" id="iconlocation"></ion-icon></span>
+                            <span>
+                                <ion-icon name="location-outline" id="iconlocation"></ion-icon>
+                            </span>
                             <span>Softech Apptech - Softech Arena <br>
                                 38 Yên Bái, Quận Hải Châu, Thành phố Đà Nẵng <br>
                             </span>
                         </li>
                         <li>
-                            <span><ion-icon name="phone-portrait-outline" id="iconphone"></ion-icon></span>
+                            <span>
+                                <ion-icon name="phone-portrait-outline" id="iconphone"></ion-icon>
+                            </span>
                             <p>
                                 <a href="#">0763788748 - Huỳnh Trường Duy</a> <br>
                                 <a href="#">0935716395 - Trương Quang Dũng</a> <br>
@@ -265,75 +261,42 @@
                             </p>
                         </li>
                         <li>
-                            <span><ion-icon name="mail-outline" id="iconmail"></ion-icon></span>
+                            <span>
+                                <ion-icon name="mail-outline" id="iconmail"></ion-icon>
+                            </span>
                             <p>
                                 <a href="#">duy12c2@gmail.com</a> <br>
                                 <a href="#">Dungxtruongw1995@gmail.com</a> <br>
                                 <a href="#">t3thinhaa@gmail.com</a>
                             </p>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
         </footer>
-<!-- ------------------------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------------------------- -->
         <!-- message plugin, phone call, back to top button -->
-            <!-- Messenger Plugin chat Code -->
-            <div id="fb-root"></div>
-            <!-- Your Plugin chat code -->
-            <div id="fb-customer-chat" class="fb-customerchat">
-            </div>
-            <script>
-            var chatbox = document.getElementById('fb-customer-chat');
-            chatbox.setAttribute("page_id", "101098755882654");
-            chatbox.setAttribute("attribution", "biz_inbox");
-            </script>
-            <!-- Your SDK code -->
-            <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                xfbml            : true,
-                version          : 'v13.0'
-                });
-            };
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-            </script>
+        <!-- Messenger Plugin chat Code -->
+        <div id="fb-root"></div>
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+        <!-- Your SDK code -->
         <!-- hết plugin messenger -->
 
         <!-- what app plugin  -->
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-df4b5dd9-051e-46be-aa7b-af4bc64fa397"></div>
 
 
         <!-- Button lên đầu trang và script cho nó -->
-            <button id="baBtn" title="Lên đầu trang">
-                <ion-icon name="arrow-up-outline"></ion-icon>
-            </button>
-            <!-- script  -->
-            <script>window.onscroll = function() {
-                    scrollFunction()
-                };
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-                            document.getElementById("baBtn").style.display = "block";
-                        } else {
-                            document.getElementById("baBtn").style.display = "none";
-                        }
-                    }
-                    document.getElementById('baBtn').addEventListener("click", function(){
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                });
-            </script>
-        <!-- ------------------------------- -->
+        <button id="baBtn" title="Lên đầu trang">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </button>
+
     </div>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
