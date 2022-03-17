@@ -1,17 +1,17 @@
 /* Header */
 .header {
-  background-image: linear-gradient(45deg, #0f0064 , #060055);
+  background-image: linear-gradient(45deg, #0f0064, #060055);
   padding: 10px 0;
   border-radius: 4px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4) ;
-  position: fixed;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 6;
 }
 .header__logo {
-  cursor: pointer;
   width: 10%;
-  display: block;
+  cursor: pointer;
 }
 .header__logo-img {
   width: 60%;
@@ -30,10 +30,10 @@
   /* overflow: hidden; */
 }
 .header__nav-list .icon {
-    text-align: center;
-    margin: 5px 25px;
-    position: relative;
-    display: none;
+  text-align: center;
+  margin: 5px 25px;
+  position: relative;
+  display: none;
 }
 .header__nav-list .icon a ion-icon {
   text-decoration: none;
@@ -76,7 +76,6 @@
 
 .header__nav-item:hover .header__nav-link:after {
   width: 100%;
-
 }
 
 /* Nav child */
@@ -85,7 +84,7 @@
   list-style: none;
   position: absolute;
   left: 0px;
-  top: 34px;
+  top: 50px;
   text-align: left;
   padding: 0;
   opacity: 0;
@@ -100,8 +99,8 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -18px;
-  height: 20px;
+  top: -32px;
+  height: 40px;
   width: 100%;
 }
 .header__nav-child-item {
@@ -138,13 +137,13 @@
 .banner {
   display: block;
   position: relative;
-  z-index: -1;
+  z-index: 5;
   width: 70%;
   margin: auto;
 }
 .banner__img {
   width: 100%;
-  object-fit: scale-down;
+  object-fit: cover;
 }
 /* hết css header và banner */
 
@@ -171,7 +170,8 @@
   font-family: Helvetica, Arial, sans-serif;
   /* font-size: 25px; */
   font-weight: bolder;
-  padding: 20px 0;
+  margin-top: -30px;
+  padding: 5px 0;
   line-height: 180%;
 }
 
@@ -180,17 +180,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .A2 .col-2 {
   display: flex;
   flex-direction: row;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 /* nội dung 2 */
 .A3 {
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -202,12 +202,12 @@
 }
 .A3 p {
   /* font-size: 25px; */
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 /* Nội dung 3 */
 .A4 {
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -215,19 +215,19 @@
 .A4 .b1 {
   display: flex;
   flex-direction: row;
-  width: 100%;  
+  width: 100%;
 }
-.bold-line{
+.bold-line {
   font-family: monospace;
   font-weight: bolder;
   font-size: 28px;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
 }
 .A4 p {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .A4 #atm-oxi {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 /* nội dung 4 */
@@ -235,23 +235,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .A5 img {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .A5 p {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 /* nội dung 5 */
 .A6 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .A6 p {
-  margin: 20px;
+  margin: 10px;
 }
 .flex-right {
   display: flex;
@@ -260,12 +260,12 @@
 
 /* ảnh nhân vật và câu chuyện đằng sau */
 .char-image {
-  margin: 20px;
+  margin: 10px;
   width: 37%;
   object-fit: scale-down;
 }
 .subs {
-  padding: 20px 0;
+  padding: 10px 0;
   object-fit: scale-down;
   /* font-size: 1.5vw; */
 }
@@ -279,7 +279,7 @@ figure {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 figure .ima {
   display: flex;
@@ -287,7 +287,7 @@ figure .ima {
   width: 100%;
   justify-content: space-evenly;
 }
-figure .ima .img-2{
+figure .ima .img-2 {
   width: 49%;
   object-fit: cover;
   padding-bottom: 10px;
@@ -309,22 +309,20 @@ figcaption {
 /* Css cho phần footer */
 footer {
   position: relative;
-  margin-bottom: -120px;
-  bottom: 0;
+  bottom:0px;
   /* z-index: -1; */
   width: 100%;
   height: auto;
   padding: 5px 10px 0 5px;
-  background-image: linear-gradient(45deg, #0f0064 , #060055);
+  background-image: linear-gradient(45deg, #0f0064, #060055);
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
   color: rgb(213, 223, 236);
   line-height: normal;
-  font-size: 10px;
-  border-bottom:2px solid #222;
-  box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4) ;
-
+  font-size: 20px;
+  border-bottom: 2px solid #222;
+  box-shadow: -1px -1px 5px 2px rgba(0, 0, 0, 0.4);
 }
 .foot-container {
   padding-left: 20px;
@@ -333,7 +331,7 @@ footer {
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
-  word-break:break-all;
+  word-break: break-all;
 }
 
 /* css các nội dung footer */
@@ -342,7 +340,7 @@ footer {
   margin: 10px;
   /* padding: 20px; */
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 /* phần thông tin về chúng tôi */
 .about h2 {
@@ -373,7 +371,7 @@ footer {
   border-radius: 4px;
 }
 /* hiệu ứng hover cho icon ở footer và chỉnh màu */
-.icon li a:hover{
+.icon li a:hover {
   background: rgb(53, 209, 230);
 }
 .icon li a ion-icon {
@@ -386,29 +384,29 @@ footer {
   font-weight: 500;
   margin-bottom: 15px;
 }
-.links ul li{
+.links ul li {
   list-style: none;
 }
-.links ul li a{
+.links ul li a {
   color: rgb(213, 223, 236);
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
 }
-.links ul li a:hover{
+.links ul li a:hover {
   color: rgb(72, 194, 41);
 }
 /* Phần liên hệ */
-.contact h2{
+.contact h2 {
   position: relative;
   color: rgb(213, 223, 236);
   font-weight: 500;
   margin-bottom: 15px;
 }
-.contact .info{
+.contact .info {
   position: relative;
 }
-.contact .info li{
+.contact .info li {
   display: flex;
   margin-bottom: 16px;
 }
@@ -417,33 +415,57 @@ footer {
   font-size: 20px;
   margin-right: 10px;
 }
-.contact .info li span{
+.contact .info li span {
   color: rgb(213, 223, 236);
 }
-.contact .info li a{
+.contact .info li a {
   color: rgb(213, 223, 236);
   text-decoration: none;
 }
 /* css cho ion-icon */
 #iconlocation {
   color: rgb(255, 45, 8);
-  
 }
 #iconphone {
   color: aqua;
-  
-
-
 }
 #iconmail {
   color: yellow;
-
-
-
 }
 /* hết css phần footer */
 /* ------------------------------------------------------- */
 /* message plugin, phone call và nút về đầu trang */
+
+/* nút phone call */
+#phBtn {
+  display: block;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 1;
+  background-color: rgb(23, 245, 226);
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.7;
+  object-fit: fill;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#phBtn ion-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
+}
+#phBtn:hover {
+  background-color: aliceblue;
+  color: #060055;
+}
 
 /* nút về đầu trang */
 #baBtn {
@@ -462,14 +484,14 @@ footer {
   object-fit: fill;
   justify-content: center;
   align-items: center;
-  margin: auto;    
+  margin: auto;
 }
-#baBtn ion-icon{
+#baBtn ion-icon {
   color: rgb(88, 98, 245);
   cursor: pointer;
   font-size: 40px;
 }
-   
+
 #baBtn:hover {
   background-color: #2861b691;
   color: forestgreen;
