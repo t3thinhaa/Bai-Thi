@@ -46,7 +46,7 @@ if (x.className === "header__nav-list") {
 //   slider
 var index = 1;
 changeImg = function () {
-    var imgs = ["./img/banner2.png","./img/banner1.png","./img/banner3.png",'./img/banner4.png'];
+    var imgs = ["./img/banner2.png","./img/banner_1.png","./img/banner_3.png",'./img/banner4.png'];
     document.getElementById('banner-img').src = imgs[index];
     index++;
     if(index == 4) {

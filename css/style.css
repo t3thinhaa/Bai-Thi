@@ -15,7 +15,7 @@
 }
 .header__logo-img {
   width: 60%;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .header__home {
   display: flex;
@@ -157,7 +157,6 @@
 .front {
   width: 70%;
   margin: 0 auto;
-  padding: 10px;
   background-color: rgba(255, 255, 255, 0.781);
   line-height: normal;
   font-size: 20px;
@@ -171,7 +170,7 @@
   font-family: Helvetica, Arial, sans-serif;
   /* font-size: 25px; */
   font-weight: bolder;
-  padding: 10px 0;
+  padding: 10px 20px;
   line-height: 180%;
 }
 
@@ -180,17 +179,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 10px 0;
+  padding: 10px 20px;
+
 }
 .A2 .col-2 {
   display: flex;
   flex-direction: row;
-  padding: 10px 0;
 }
 
 /* nội dung 2 */
 .A3 {
   margin: 10px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -208,6 +208,7 @@
 /* Nội dung 3 */
 .A4 {
   margin: 10px 0;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -221,7 +222,8 @@
   font-family: monospace;
   font-weight: bolder;
   font-size: 28px;
-  padding: 10px 0 0 0;
+  padding: 10px 20px;
+  
 }
 .A4 p {
   padding-bottom: 10px;
@@ -236,6 +238,8 @@
   flex-direction: column;
   width: 100%;
   margin: 10px 0;
+  padding: 10px 20px;
+
 }
 .A5 img {
   padding-bottom: 30px;
@@ -249,6 +253,8 @@
   flex-direction: column;
   width: 100%;
   margin: 10px 0;
+  padding: 10px 20px;
+
 }
 .A6 p {
   margin: 20px;
@@ -261,7 +267,7 @@
 /* ảnh nhân vật và câu chuyện đằng sau */
 .char-image {
   margin: 10px;
-  width: 37%;
+  width: 25%;
   object-fit: scale-down;
 }
 .subs {
